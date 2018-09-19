@@ -15,7 +15,7 @@
         <h1 class="logo"><a href="index.html"><img class="small" alt="Mandala logo" src="img/Logo/Logo.png"></a></h1>
         <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Our story</a></li>
+            <li><a href="our-story.html">Our story</a></li>
             <li><a href="menu.html">Our menu</a></li>
         </ul>
     </header>
@@ -28,10 +28,12 @@
                         You are about to embark on a culinary voyage that will take you to the Indian sub continent. Indian cuisine is as diverse, rich and ancient as the country itself.<p>
 
                             It is impossible for any one restaurant to serve all the endless varieties of superb Indian food, which is why the Mandala Indian Restaurant in Kamloops passionately brings you a taste of the best cuisine North India has to offer.</p> <img src="img/Our_story.jpg" class="small" alt="this viwe is amazing">
-                </div><!-- .splash-text -->
 
+
+                </div><!-- .splash-text -->
             </div><!-- .splash-content -->
         </section><!-- .splash -->
+        <div id="map"></div>
         <div class="footer">
             <ul>
                 <li>
@@ -43,7 +45,6 @@
                 <li>
                     <div class="footer margintop">
                         <p class="bucket-title-footer"><strong>Phone:</strong> (972) 656-9260 <br><br>
-
                             <strong>Mon- Thurs:</strong> 7:00am – 12:00am<br>
                             <strong>Fri-Sat:</strong> 7:00am – 2:00am<br>
                             <strong> Sun:</strong> 9:00am – 12:000am</p>
@@ -62,5 +63,22 @@
     <footer class="colophon">
         <aside>Copyright © Mandala Indian Restaurant 2006. All Rights Reserved. </aside>
     </footer>
+
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: -34.397,
+                    lng: 150.644
+                },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGSXi_eRePK4WPVjGQ6yeXf13DU1D0b00&callback=initMap" async defer></script>
+
+
 </body>
 </html>
