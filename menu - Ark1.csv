@@ -1,0 +1,73 @@
+kategori        ,navn        ,pris,kortbeskrivelse,billede
+Forretter,"VEGETABLE SAMOSA
+",$4.95,Crisp patties stuffed with potatoes and green peas.,vegetable-samosa
+Forretter,"ALOO PAKORA
+
+","$5.95
+","Potato fritters mildly spiced and deep fried in oil.
+
+",aloo-pakora
+Forretter,"CHILI PAKORA
+","$5.95
+","Hot peppers spiced in chick pea batter and fried.
+
+",chili-pakora
+"Hovedretter
+",CHICKEN TANDOORI,"$13.95
+",Chicken marinated overnight in yogurt with fresh Indian spices and grilled in clay oven.,chicken-tandoori
+"Hovedretter
+","CHICKEN TIKKA
+","$14.95
+","Chicken marinated overnight in ginger, garlic, lemon juice and yogurt, skewered and grilled in a clay oven.",chicken-tikka
+"Hovedretter
+","CHICKEN CURRY
+","$14.95
+","Boneless chicken cooked in a curry sauce.
+
+",chicken-curry
+"Hovedretter
+",LAMB MADRAS,"$15.95
+",Lamb cooked with curry sauce and special madras spices,lamb-madras
+"Hovedretter
+","BOTI KABAB MASALA
+","$15.95
+","Cubes of lamb cooked in a creamy butter sauce with onions, spices and bell peppers.",boti-kabab-masala
+"Hovedretter
+",SHRIMP VINDALOO,"$17.95
+","Shrimps marinated with vinegar, chilies and spices, then cooked with potatoes in a Goan curry sauce.",shrimp-vandaloo
+"Sideorders
+","MANGO CHUTNEY
+","$2.95
+",,mango-chutney
+"Sideorders
+","RAITA
+","$2.95
+",,rita
+"Sideorders
+","GREEN SALAD
+","$3.95
+",,green-salad
+Desserter,"RASMALAI
+","$4.50
+","Sweet, cottage cheese cake soaked in rose flavored milk.
+
+",rasmalai
+Desserter,"KULFI
+","$3.95
+",Indian ice cream made with milk and pistachios.,kulfi
+Desserter,"MANGO ICECREAM
+","$3.95
+",Homemade ice cream made with mango pulp.,mango-icecream
+"Drikkevarer
+",SODA,$2.50,,soda
+"Drikkevarer
+",BEERS,"$3.95
+","BUDWEISER,
+BUD LIGHT,
+MICHELOB,
+MICHELOB ULTRA,",beer
+"Drikkevarer
+","BLUSH WINE
+","$25
+",White Zinfandel Glen Ellen,blush-wine
+,WHITE WINE,$30,Chardonnay,white-wine

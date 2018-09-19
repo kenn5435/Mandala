@@ -47,7 +47,6 @@ select,
 textarea {
     font-family: 'roboto';
     font-size: 18px;
-    line-height: 1.5;
 }
 
 h1,
@@ -97,6 +96,19 @@ img {
 
 }
 
+.xsmall {
+    width: 60%;
+}
+
+.social {
+    width: 16px;
+}
+
+.left {
+    width: 16px;
+    margin-left: 1em;
+}
+
 h2 {
     font-family: 'Alegreya', sans-serif;
     color: #304356;
@@ -110,16 +122,15 @@ h2 {
 .bucket-title {
     font-family: 'Alegreya', sans-serif;
     color: #304356;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
 }
 
 .bucket-title-footer {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 13px;
     padding: 0;
-    font-weight: lighter;
 
 }
 
@@ -137,7 +148,7 @@ h2 {
     line-height: 21px;
     color: #ACACAC;
     font-size: 14px;
-    font-family: 'roboto'
+    font-family: 'roboto';
 }
 
 
@@ -191,9 +202,8 @@ h2 {
 }
 
 .buckets li {
-    margin-bottom: 1em;
+    margin: .5em;
     list-style-type: none;
-    border: 1px solid #C7C7C7;
 
 }
 
@@ -203,26 +213,30 @@ h2 {
 
 /* Buckets footer */
 
-.buckets-footer {
+.footer {
     padding: 2em 1em 1em;
     background: #304356;
+    justify-items: center;
+
+
 }
 
 .margin {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
-. .buckets-footer ul {
+. .footer ul {
     margin: 0;
     padding: 0;
+
 }
 
-.buckets-footer li {
+.footer li {
     margin-bottom: 1em;
     list-style-type: none;
 }
 
-.buckets-footer {
+.footer {
     padding: .5em;
 }
 
@@ -267,16 +281,7 @@ h2 {
     border-bottom: 1px solid white;
 }
 
-/* middle */
-.middle {
-    margin: auto;
-    background: #2185C5;
-    color: white;
-}
 
-.middle h1 {
-    text-align: center;
-}
 
 /* Banner */
 #shadow {
@@ -284,70 +289,288 @@ h2 {
 }
 
 /* menu */
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+* {
+    box-sizing: border-box;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .logo {
-    order: 3;
+    margin: 0;
+    font-size: .5em
 }
 
-.item {
-    color: #B78E57;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 25px;
-    padding: 24px;
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+    padding: 15px 30px;
     text-transform: uppercase;
+    display: block;
+    font-family: 'roboto';
+    font-weight: lighter;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    color: #B78E57;
+    text-align: center;
 }
 
-.item:nth-of-type(n+3) {
-    order: 3;
+
+.main-nav a:hover {
+    color: #C49F6D;
 }
+
+.main-nav a:active {
+    font-weight: bolder;
+
+
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    background-color: #f4f4f4;
+
+}
+
+
 
 /* Button */
 
 button {
-    padding: 15px 10px 15px 10px;
+    padding: .5em;
     background-color: #304356;
     font-family: 'roboto';
     font-size: 15px;
     color: #fff;
-    margin: 2em;
+    align-items: content;
+}
+
+.margintop {
+    margin-top: 5px;
+    position: relative;
+}
+
+
+/*--------------------------------------------------------------
+menucard!
+--------------------------------------------------------------*/
+
+.retter {
+    margin: .5em;
+}
+
+.retter h2 {
+    font-family: 'Alegreya', sans-serif;
+    color: #304356;
+    font-size: 20px;
+    padding: 0;
+}
+
+.data-beskrivelse {
+    margin: 0;
+    padding: 1em 0;
+    line-height: 21px;
+    color: #ACACAC;
+    font-size: 14px;
+    font-family: 'roboto';
+}
+
+.data-container article img {
+    width: 100%;
+}
+
+.data-price {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #B78E57;
+    padding: 0;
+    margin: 0;
+}
+
+.data-container {
+    margin: 0 auto;
+    display: grid;
 
 
 }
+
+
+
+.x2 {
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+
+
+
+#modal {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#modal-content {
+    width: 80%;
+    height: 50%;
+    background-color: rgba(250, 250, 250, 0);
+    margin: auto;
+}
+
+#modal.vis {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+}
+
+#modal img {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#modal-boks {
+    max-width: 100%;
+    background: #cccccc;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.close {
+    width: 10%;
+    height: 5%;
+    cursor: pointer;
+    margin: 20px 0px;
+    background: #cccccc;
+}
+
+.centerbtn {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 /*--------------------------------------------------------------
 Use flex to create a three-bucket layout
 --------------------------------------------------------------*/
 
-@media all and (max-width: 800px) {
-    .container {
-        flex-direction: column;
-        align-items: stretch;
+
+/* =================================
+  Media Queries
+==================================== */
+@media screen and (min-width:404px) {
+
+
+
+    .data-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .logo {
-        order: 0;
-        text-align: center;
-        width: 100px;
-        margin: auto auto 20px;
+    .close {
+        width: 5%;
+
     }
 
-    .item {
-        text-align: center;
+    .x2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        font-size: 8px;
     }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+        font-size: 9px;
+
+    }
+
+
 }
+
+@media screen and (min-width:580px) {
+    .data-container {
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .centerbtn {
+        justify-content: center;
+    }
+
+    .x2 {
+        margin: .3em;
+        padding: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+        font-size: 11px;
+
+    }
+
+}
+
+#modal img {
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (min-width:600px) {
+    #modal-boks {
+        max-width: 475px;
+
+    }
+
+    .x2 {
+        margin: .3em;
+        padding: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        font-size: 11.5px;
+    }
+
+
+}
+
 
 @media screen and (min-width: 700px) {
     @supports (display: flex) {
 
         .buckets ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         .buckets li {
@@ -355,18 +578,132 @@ Use flex to create a three-bucket layout
 
         }
 
-        .buckets-footer ul {
+        .footer ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+
         }
 
-        .buckets-footer li {
-            width: 30%;
+        .footer li {
+            width: 25%;
+        }
 
+        .button {
+            width: 20%;
+            margin: auto;
+            text-align: center;
+            grid-column: 1/5;
+
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
         }
 
     }
 }
+
+@media screen and (max-width: 700px) {
+
+    .margintop {
+        margin-top: 0px;
+    }
+
+    * {
+        text-align: center;
+    }
+
+    .button {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+        grid-column: 1/5;
+
+    }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+
+    }
+
+
+}
+
+
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .x2 {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+
+    }
+
+
+
+    .button a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+
+    }
+
+}
+
+@media screen and (min-width:1050px) {
+    .x2 {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .button {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+        grid-column: 1/5;
+
+    }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
@@ -404,22 +741,30 @@ CSS Grid layout for modern browsers:
             grid-column: 2/4;
         }
 
-        .more-content {
-            grid-column: 2/4;
-        }
 
         .buckets ul {
             grid-column: 2/4;
         }
 
-        .buckets-footer ul {
+        .footer ul {
             grid-column: 2/4;
+            align-items: baseline;
+            margin: 2em;
+
+
         }
 
-        button {
-            grid-column: 1/5;
+        .button {
             width: 20%;
             margin: auto;
+            text-align: center;
+            grid-column: 1/5;
+
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
         }
 
         /* Use automatic grid placement + span to let each item span two columns: */

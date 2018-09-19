@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mandala - Restaurante</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/style.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+
+<body class="site">
+    <header class="header">
+        <h4 class="logo"><a href="index.html"><img class="small" alt="Mandala logo" src="img/Logo/Logo.png"></a></h4>
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="menu.html">Our menu</a></li>
+        </ul>
+    </header>
+
+    <main id="content" class="main-area">
+        <div class="splash">
+            <div class="splash-content">
+                <div class="centerbtn">
+                    <button class="x2" data-kategori="alle">Alle</button>
+                    <button class="x2" data-kategori="Forretter">Appetizers</button>
+                    <button class="x2" data-kategori="Hovedretter">Main courses</button>
+                    <button class="x2" data-kategori="Desserter">Desserts</button>
+                    <button class="x2" data-kategori="Drikkevarer">Beverages</button>
+                    <button class="x2" data-kategori="Sideorders">Sideorders</button>
+                </div>
+                <div class="container">
+                    <div class="data-container"></div>
+                </div>
+                <template class="data-template">
+                    <article class="retter">
+                        <img src="" alt=""><br>
+                        <h2></h2><br>
+                        <span class="data-beskrivelse"></span><br><br>
+                        <span class="data-price"></span><br>
+
+                    </article>
+                </template>
+
+            </div><!-- .splash-content -->
+
+        </div><!-- .our-menu end -->
+
+        <div class="footer">
+            <ul>
+                <li>
+
+                    <div class="footer">
+                        <p class="bucket-title-footer">Mandala Is a , Indian local food court with a passion for serving chef-driven, healthier dining options.<br><br>Come visit today
+                        </p>
+                    </div><!-- .bucket -->
+                </li>
+
+
+
+                <li>
+                    <div class="footer margintop">
+                        <p class="bucket-title-footer"><strong>Phone:</strong> (972) 656-9260 <br><br>
+
+                            <strong>Mon- Thurs:</strong> 7:00am – 12:00am<br>
+                            <strong>Fri-Sat:</strong> 7:00am – 2:00am<br>
+                            <strong> Sun:</strong> 9:00am – 12:000am</p>
+                    </div><!-- .bucket -->
+                </li>
+
+                <li>
+                    <div class="footer margintop">
+                        <p class="bucket-title-footer">The restaurant is will be open soon<br><br>
+                            <strong>Location:</strong> 249 West State Road 436 #1093, Altamonte Springs, FL 32714, USA
+                        </p>
+                    </div><!-- .bucket -->
+                </li>
+            </ul>
+        </div><!-- .buckets -->
+
+
+
+
+
+    </main>
+
+    <footer class="colophon">
+        <aside>Copyright © Mandala Indian Restaurant 2006. All Rights Reserved. </aside>
+
+    </footer>
+    <script>
+        let retter;
+        let dest = document.querySelector(".data-container");
+        document.addEventListener("DOMContentLoaded", hentJson);
+        madFilter = "alle";
+        // Hvis du skifter classen så husk også at skifte den her
+        document.querySelectorAll(".x2").forEach(knap => {
+
+            knap.addEventListener("click", filtrering)
+
+        });
+
+
+
+        function filtrering() {
+
+            dest.textContent = "";
+
+            madFilter = this.getAttribute("data-kategori");
+
+            visRetter();
+
+        }
+
+
+
+
+
+        async function hentJson() {
+            let myJson = await fetch("menu.json");
+            retter = await myJson.json();
+            visRetter();
+        }
+
+        function visRetter() {
+            let temp = document.querySelector(".data-template");
+            //løb personlisten igennem og lav en klon
+            retter.forEach(retter => {
+                if (retter.kategori == madFilter || madFilter == "alle") {
+
+
+                    let klon = temp.cloneNode(true).content;
+                    //indsæt data i klonen
+
+                    klon.querySelector("img").src = "food/small/" + retter.billede + "-sm.jpg";
+                    klon.querySelector("h2").textContent = retter.navn;
+                    klon.querySelector(".data-beskrivelse").textContent = retter.kortbeskrivelse;
+                    klon.querySelector(".data-price").textContent = "Price: " + retter.price + ",-";
+                    klon.querySelector("img").addEventListener("off", () => {
+                        visModal(retter);
+                    });
+
+                    //placer klon i DOM
+                    dest.appendChild(klon);
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

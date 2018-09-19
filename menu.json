@@ -1,0 +1,135 @@
+[
+  {
+    "kategori": "Forretter",
+    "navn": "VEGETABLE SAMOSA",
+    "price": "$4.95",
+    "kortbeskrivelse": "Crisp patties stuffed with potatoes and green peas.",
+    "billede": "vegetable-samosa"
+  },
+  {
+    "kategori": "Forretter",
+    "navn": "ALOO PAKORA",
+    "price": "$5.95",
+    "kortbeskrivelse": "Potato fritters mildly spiced and deep fried in oil.",
+    "billede": "aloo-pakora"
+  },
+  {
+    "kategori": "Forretter",
+    "navn": "CHILI PAKORA",
+    "price": "$5.95",
+    "kortbeskrivelse": "Hot peppers spiced in chick pea batter and fried.",
+    "billede": "chili-pakora"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "CHICKEN TANDOORI",
+    "price": "$13.95",
+    "kortbeskrivelse": "Chicken marinated overnight in yogurt with fresh Indian spices and grilled in clay oven.",
+    "billede": "chicken-tandoori"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "CHICKEN TIKKA",
+    "price": "$14.95",
+    "kortbeskrivelse": "Chicken marinated overnight in ginger, garlic, lemon juice and yogurt, skewered and grilled in a clay oven.",
+    "billede": "chicken-tikka"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "CHICKEN CURRY",
+    "price": "$14.95",
+    "kortbeskrivelse": "Boneless chicken cooked in a curry sauce.",
+    "billede": "chicken-curry"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "LAMB MADRAS",
+    "price": "$15.95",
+    "kortbeskrivelse": "Lamb cooked with curry sauce and special madras spices",
+    "billede": "lamb-madras"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "BOTI KABAB MASALA",
+    "price": "$15.95",
+    "kortbeskrivelse": "Cubes of lamb cooked in a creamy butter sauce with onions, spices and bell peppers.",
+    "billede": "boti-kabab-masala"
+  },
+  {
+    "kategori": "Hovedretter",
+    "navn": "SHRIMP VINDALOO",
+    "price": "$17.95",
+    "kortbeskrivelse": "Shrimps marinated with vinegar, chilies and spices, then cooked with potatoes in a Goan curry sauce.",
+    "billede": "shrimp-vandaloo"
+  },
+  {
+    "kategori": "Sideorders",
+    "navn": "MANGO CHUTNEY",
+    "price": "$2.95",
+    "kortbeskrivelse": "",
+    "billede": "mango-chutney"
+  },
+  {
+    "kategori": "Sideorders",
+    "navn": "RAITA",
+    "price": "$2.95",
+    "kortbeskrivelse": "",
+    "billede": "rita"
+  },
+  {
+    "kategori": "Sideorders",
+    "navn": "GREEN SALAD",
+    "price": "$3.95",
+    "kortbeskrivelse": "",
+    "billede": "green-salad"
+  },
+  {
+    "kategori": "Desserter",
+    "navn": "RASMALAI",
+    "price": "$4.50",
+    "kortbeskrivelse": "Sweet, cottage cheese cake soaked in rose flavored milk.",
+    "billede": "rasmalai"
+  },
+  {
+    "kategori": "Desserter",
+    "navn": "KULFI",
+    "price": "$3.95",
+    "kortbeskrivelse": "Indian ice cream made with milk and pistachios.",
+    "billede": "kulfi"
+  },
+  {
+    "kategori": "Desserter",
+    "navn": "MANGO ICECREAM",
+    "price": "$3.95",
+    "kortbeskrivelse": "Homemade ice cream made with mango pulp.",
+    "billede": "mango-icecream"
+  },
+  {
+    "kategori": "Drikkevarer",
+    "navn": "SODA",
+    "price": "$2.50",
+    "kortbeskrivelse": "",
+    "billede": "soda"
+  },
+  {
+    "kategori": "Drikkevarer",
+    "navn": "BEERS",
+    "price": "$3.95",
+    "kortbeskrivelse": "BUDWEISER,\nBUD LIGHT,\nMICHELOB,\nMICHELOB ULTRA,",
+    "billede": "beer"
+  },
+  {
+    "kategori": "Drikkevarer",
+    "navn": "BLUSH WINE",
+    "price": "$25",
+    "kortbeskrivelse": "White Zinfandel Glen Ellen",
+    "billede": "blush-wine"
+  },
+  {
+    "kategori": "",
+    "navn": "WHITE WINE",
+    "price": "$30",
+    "kortbeskrivelse": "Chardonnay",
+    "billede": "white-wine"
+  }
+]
